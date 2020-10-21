@@ -8,8 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="employee")
-public class Employee {
+@Table(name="user")
+public class User {
 
 	// define fields
 	@Id
@@ -26,11 +26,11 @@ public class Employee {
 	private String email;
 	
 	// define constructors
-	public Employee() {
+	public User() {
 		
 	}
 
-	public Employee(String firstName, String lastName, String email) {
+	public User(String firstName, String lastName, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
@@ -72,7 +72,7 @@ public class Employee {
 	// define toString
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
+		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
 	}
 	
 }
